@@ -95,7 +95,7 @@ this was run in data from Willow manuscript. See [redmine issue 2387](https://eb
 ```{r}
 files <- dir(".", pattern = ".txt")
 library(data.table)
-lat <- fread(files[1])[,list(lat = V2)]$lat
+lat <-  fread(files[1])[,list(lat = V2)]$lat
 lon <- fread(files[1])[,list(lon = V3)]$lon
 
 
