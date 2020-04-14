@@ -32,7 +32,7 @@ fi
 # Create tutorial directory
 mkdir -p book_hosted/tutorials
 
-# Copy all HTML files into target folder
+# Copy     all HTML files into target folder
 while read f; do
     cp -r ${f}.html book_hosted/tutorials
 done < buildfiles
